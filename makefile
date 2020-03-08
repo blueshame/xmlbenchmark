@@ -1,9 +1,9 @@
-#use for openSUSE
+#use for ubuntu
 OBJECTS = main.o
 CC = g++
 CFLAGS = -c -g -Wall
 INCLUDES =  -I/usr/include/libxml2
-LIBS = /usr/lib64/libxml2.so.2.9.7
+LIBS = /usr/lib/x86_64-linux-gnu/libxml2.so.2.9.4
 
 all: $(OBJECTS)
 	$(CC) -o runxml $(OBJECTS) $(LIBS)
