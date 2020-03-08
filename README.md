@@ -1,1 +1,2 @@
 # xmlbenchmark
+make all
