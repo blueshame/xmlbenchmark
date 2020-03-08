@@ -1,0 +1,5 @@
+<autoupload>
+    <template name="common">
+		<path dir="/opt/source" />
+	</template>
+</autoupload>
