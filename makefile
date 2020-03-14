@@ -1,12 +1,13 @@
 #use for ubuntu
 OBJECTS = main.o
-CC = g++
+CC = gcc
 CFLAGS = -c -g -Wall
+LDFLAGS = -lstdc++
 INCLUDES =  -I/usr/include/libxml2
-LIBS = /usr/lib/x86_64-linux-gnu/libxml2.so.2.9.4
+LIBS = /usr/lib/x86_64-linux-gnu/libxml2.so
 
 all: $(OBJECTS)
-	$(CC) -o runxml $(OBJECTS) $(LIBS)
+	$(CC) -o runxml $(OBJECTS) $(LDFLAGS) $(LIBS)
 
 main.o: main.cpp
 	$(CC) $(CFLAGS) $(INCLUDES) main.cpp
